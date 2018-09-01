@@ -2,14 +2,14 @@ export class AuthService {
     loggedIn = false;
 
     isAuthenticated() {
-        return promise = new Promise(
+        const promise = new Promise(
             (resolve, reject) => {
                 setTimeout(() => {
                     resolve(this.loggedIn);
                 }, 800);
             }
         );
-        // return promise;
+        return promise;
     }
 
     login() {
